@@ -21,7 +21,8 @@ class PokemonAdapter : RecyclerView.Adapter<PokemonAdapter.PokemonHolder>() {
         return PokemonHolder(view)
     }
 
-    override fun getItemCount(): Int = list.count()
+    override fun getItemCount():
+            Int = list.count()
         override
 
     fun onBindViewHolder(holder: PokemonHolder, position: Int) {
