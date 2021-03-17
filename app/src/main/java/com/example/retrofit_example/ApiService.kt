@@ -11,10 +11,10 @@ import retrofit2.http.Path
 interface ApiService {
 
     @GET("pokemon-form/{id}")
-    suspend fun getFilm(@Path("id") name: String) : Response<Pokemon>
+    suspend fun getPokemon(@Path("id") name: String) : Response<Pokemon>
 
     @GET("pokemon?limit=200&offset=200")
-    suspend fun getListFilms() : Response<PokemonResponse>
+    suspend fun getListPokemons() : Response<PokemonResponse>
 
 
     companion object {

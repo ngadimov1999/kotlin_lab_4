@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.retrofit_example.models.Pokemon
 import com.example.retrofit_example.models.PokemonResponse
 
-class FilmAdapter : RecyclerView.Adapter<FilmAdapter.FilmHolder>() {
+class PokemonAdapter : RecyclerView.Adapter<PokemonAdapter.PokemonHolder>() {
     var list = listOf<Pokemon>()
 
     fun update(response: List<Pokemon>) {
@@ -16,19 +16,19 @@ class FilmAdapter : RecyclerView.Adapter<FilmAdapter.FilmHolder>() {
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.film_item, parent, false)
-        return FilmHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.pok_item, parent, false)
+        return PokemonHolder(view)
     }
 
     override fun getItemCount(): Int = list.count()
         override
 
-    fun onBindViewHolder(holder: FilmHolder, position: Int) {
+    fun onBindViewHolder(holder: PokemonHolder, position: Int) {
         holder.bind(list[position])
     }
 
-    class FilmHolder(val view: View) : RecyclerView.ViewHolder(view) {
+    class PokemonHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bind(item: Pokemon) {
             view.setOnClickListener {}
             val title = view.findViewById<TextView>(R.id.title)

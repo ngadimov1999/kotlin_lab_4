@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         GlobalScope.launch(Dispatchers.IO) {
-            val response = ApiService.instance().getFilm("1")
+            val response = ApiService.instance().getPokemon("1")
 
-            val listResponse = ApiService.instance().getListFilms()
+            val listResponse = ApiService.instance().getListPokemons()
 
             Log.d("TEST_RESP", response.body().toString())
             Log.d("TEST_RESP1", listResponse.body().toString())
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 val rv = findViewById<RecyclerView>(R.id.listRv)
 
                 rv.layoutManager = LinearLayoutManager(baseContext)
-                val adapter = FilmAdapter()
+                val adapter = PokemonAdapter()
                 rv.adapter = adapter
 
                 if (pokemonResponse != null) {
