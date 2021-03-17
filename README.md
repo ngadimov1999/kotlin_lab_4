@@ -46,7 +46,7 @@ kotlin-lab4-master
 │  │  ├─ com.example.pokeapi
 │  │  │  └─ models
 │  │  │  │  └─ Pokemon
-│  │  │  │  └─ PokemonList
+│  │  │  │  └─ PokemonResponse
 │  │  │  └─ ApiService
 │  │  │  └─ MainActivity
 │  │  │  └─ PokemonAdapter
@@ -54,7 +54,7 @@ kotlin-lab4-master
 
 **Pokemon** - класс для получения одного покемона из запроса
 
-**PokemonList** - класс для получения списка покемонов из запроса
+**PokemonResponse** - класс для получения списка покемонов из запроса
 
 **PokemonAdapter** - адаптер для подгрузки данных в RecyclerView
 
