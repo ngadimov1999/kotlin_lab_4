@@ -13,7 +13,7 @@ interface ApiService {
     @GET("pokemon-form/{id}")
     suspend fun getPokemon(@Path("id") name: String) : Response<Pokemon>
 
-    @GET("pokemon?limit=200&offset=200")
+    @GET("pokemon?limit=200&offset=0")
     suspend fun getListPokemons() : Response<PokemonResponse>
 
 

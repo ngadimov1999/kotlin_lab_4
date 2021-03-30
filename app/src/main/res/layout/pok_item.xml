@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        app:cardBackgroundColor="@color/teal_200"
+        app:cardBackgroundColor="#27AE60"
+        app:cardCornerRadius="4dp"
         card_view:cardCornerRadius="4dp">
 
         <TextView
@@ -22,10 +22,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="casual"
-            android:textSize="16sp"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="16sp" />
 
     </androidx.cardview.widget.CardView>
 
