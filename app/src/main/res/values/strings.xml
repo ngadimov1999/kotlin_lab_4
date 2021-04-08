@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Покемоны</string>
+    <string name="power">Стихия:</string>
+    <string name="weight">Вес:</string>
 </resources>

@@ -8,22 +8,80 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="254dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        app:cardBackgroundColor="#27AE60"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="13dp"
+        app:cardBackgroundColor="@color/light_yellow"
         app:cardCornerRadius="4dp"
         card_view:cardCornerRadius="4dp">
 
+        <ImageView
+            android:id="@+id/pok_img"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"/>
+
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="65dp"
             android:layout_gravity="center"
+            android:gravity="center_horizontal|bottom"
+            android:background="#3D886D"
+            android:textColor="@color/white"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center"
+            android:layout_marginTop="106dp"
+            android:layout_marginRight="151dp"
+            android:background="@color/light_yellow"
+            android:text="@string/power"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/pok_power"
+            android:layout_width="136dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="106dp"
+            android:layout_marginRight="42dp"
+            android:background="@color/light_yellow"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="67dp"
+            android:background="@color/light_yellow"
+            android:text="@string/weight"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/pok_weight"
+            android:layout_width="83dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center"
+            android:layout_marginTop="106dp"
+            android:layout_marginLeft="149dp"
+            android:background="@color/light_yellow"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+
 
     </androidx.cardview.widget.CardView>
 
