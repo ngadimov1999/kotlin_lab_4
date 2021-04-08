@@ -51,6 +51,7 @@ kotlin-lab4-master
 │  │  │  └─ MainActivity
 │  │  │  └─ PokemonAdapter
 ```
+(изменяется)
 
 **Pokemon** - класс для получения одного покемона из запроса
 
